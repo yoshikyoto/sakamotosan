@@ -1,6 +1,10 @@
 {
   "name": "sakamotosan",
+  "scripts": {
+    "start": "node bot.js"
+  },
   "dependencies": {
-    "botkit": "0.6.15"
+    "botkit": "0.6.15",
+    "dotenv": "6.0.0"
   }
 }
