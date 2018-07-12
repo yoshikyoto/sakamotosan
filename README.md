@@ -1,5 +1,7 @@
 # 阪元さん（Sakamoto-san）
 
+Slack bot powered by node.js and Botkit.
+
 ## Dependency
 
 * node
