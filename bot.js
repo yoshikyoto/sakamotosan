@@ -1,8 +1,6 @@
 let Botkit = require('botkit');
-let middleware = require('./lib/botkit/middleware.js');
-
-let pomodoro = require('./lib/botkit/middlewares/pomodoro.js');
-let xayahrakan = require('./lib/botkit/middlewares/xayahrakan.js');
+let Pomodoro = require('./lib/botkit/middlewares/pomodoro.js');
+let XayahRakan = require('./lib/botkit/middlewares/xayahrakan.js');
 
 // .envを環境変数の値としてセット
 require('dotenv').config()
@@ -18,11 +16,11 @@ let bot = controller.spawn({
 
 // 設定するミドルウェア（対話モジュール）
 let middlewares = [
-  pomodoro,
-  xayahrakan,
+  new Pomodoro(),
+  new XayahRakan(),
 ];
 
 // ミドルウェアを順番に設定
-for (items of middlewares) {
-  middleware.append(controller, items.middleware);
+for (middleware of middlewares) {
+  middleware.install(controller);
 }
