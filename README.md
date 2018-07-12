@@ -1,4 +1,9 @@
-# 阪元さん
+# 阪元さん（Sakamoto-san）
+
+## Dependency
+
+* node
+* npm (and yarn)
 
 ## Hot to use
 
