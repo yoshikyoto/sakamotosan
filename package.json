@@ -1,0 +1,6 @@
+{
+  "name": "sakamotosan",
+  "dependencies": {
+    "botkit": "0.6.15"
+  }
+}
