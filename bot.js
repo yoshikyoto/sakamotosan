@@ -1,6 +1,7 @@
 let Botkit = require('botkit');
 let Pomodoro = require('./lib/botkit/middlewares/pomodoro.js');
 let XayahRakan = require('./lib/botkit/middlewares/xayahrakan.js');
+let Working = require('./lib/botkit/middlewares/Working.js');
 
 // .envを環境変数の値としてセット
 require('dotenv').config()
@@ -18,6 +19,7 @@ let bot = controller.spawn({
 let middlewares = [
   new Pomodoro(),
   new XayahRakan(),
+  new Working(),
 ];
 
 // ミドルウェアを順番に設定
