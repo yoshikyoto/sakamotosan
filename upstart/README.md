@@ -4,7 +4,7 @@
 
 * CentOS 6
 
-## Usage
+## Usage Example
 
 ```
 ln -s /etc/init/sakamotosan.conf /home/sakamotosan/sakamotosan/upstart/sakamotosan.conf
