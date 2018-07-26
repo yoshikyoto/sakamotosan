@@ -1,5 +1,9 @@
 # Upstart config for sakamotosan
 
+## Dependency
+
+* CentOS 6
+
 ## Usage
 
 ```
