@@ -1,6 +1,10 @@
 # Upstart config for sakamotosan
 
-## Usage
+## Dependency
+
+* CentOS 6
+
+## Usage Example
 
 ```
 ln -s /etc/init/sakamotosan.conf /home/sakamotosan/sakamotosan/upstart/sakamotosan.conf
