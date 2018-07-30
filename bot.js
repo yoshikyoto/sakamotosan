@@ -2,6 +2,7 @@ let Botkit = require('botkit');
 let Pomodoro = require('./lib/botkit/middlewares/pomodoro.js');
 let XayahRakan = require('./lib/botkit/middlewares/xayahrakan.js');
 let Working = require('./lib/botkit/middlewares/Working.js');
+let Task = require('./lib/botkit/middlewares/Task.js');
 
 // .envを環境変数の値としてセット
 require('dotenv').config()
@@ -17,6 +18,7 @@ let bot = controller.spawn({
 
 // 設定するミドルウェア（対話モジュール）
 let middlewares = [
+  new Task(),
   new Pomodoro(),
   new XayahRakan(),
   new Working(),
