@@ -13,3 +13,7 @@ Slack bot powered by node.js and Botkit.
 * `.env.sample` をコピーして `.env` を作成
 * `yarn install`
 * `yarn run start`
+
+## Trello
+
+* http://www.utakata.work/entry/20180725/1532479672
