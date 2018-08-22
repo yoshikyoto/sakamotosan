@@ -4,7 +4,6 @@ module.exports = [
   'ちゃんとブログ更新してるか？',
   '呼び出し手当ちゃんとつけてるか？',
   'レビュー見てるか？',
-  'https://github.com/kskgroup',
   'くこルくん',
   '無料ニコニ広告ガチャしたか？ https://nicoad.nicovideo.jp/',
   'dreddはOpanAPI 3.0に対応したかなー https://github.com/apiaryio/dredd/issues/894',
