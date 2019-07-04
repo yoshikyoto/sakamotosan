@@ -12,8 +12,8 @@ Slack bot powered by node.js and Botkit.
 * Get Slack token: http://www.utakata.work/entry/2017/11/18/100000
 
 ```
-cp .env.sample .env`
-# edit `.env`
+cp .env.sample .env
+# edit .env
 yarn install
 yarn run start
 ```
