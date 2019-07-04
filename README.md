@@ -5,7 +5,7 @@ Slack bot powered by node.js and Botkit.
 ## Dependency
 
 * node
-* npm (and yarn)
+* yarn
 
 ## Hot to use
 
