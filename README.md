@@ -22,6 +22,19 @@ yarn run start
 
 * http://www.utakata.work/entry/20180725/1532479672
 
+## systemd
+
+* First, install nodejs as root user.
+
+```
+sudo cp ./systemd/sakamotosan.service /etc/systemd/system/sakamotosan.service
+
+# edit /etc/systemd/system/sakamotosan.service
+# change `WorkingDirectory` as sakamotosan repository root
+# and change `ExecStart` command into absolute path to sakamotosan's yarn
+```
+
+
 ## Example for Upstart
 
 How to execute Sakamotosan on Upstart.
