@@ -5,14 +5,18 @@ Slack bot powered by node.js and Botkit.
 ## Dependency
 
 * node
-* npm (and yarn)
+* yarn
 
 ## Hot to use
 
 * Get Slack token: http://www.utakata.work/entry/2017/11/18/100000
-* `cp .env.sample .env` and edit `.env`
-* `yarn install`
-* `yarn run start`
+
+```
+cp .env.sample .env
+# edit .env
+yarn install
+yarn run start
+```
 
 ## About Trello API
 
