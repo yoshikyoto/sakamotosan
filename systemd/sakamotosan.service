@@ -1,0 +1,11 @@
+[Unit]
+Description=sakamotosan
+
+[Service]
+WorkingDirectory=/home/yoshiyuki_sakamoto/sakamotosan
+ExecStart=/home/yoshiyuki_sakamoto/sakamotosan/node_modules/yarn/bin/yarn run start
+Restart=always
+Type=simple
+
+[Install]
+WantedBy = multi-user.target
