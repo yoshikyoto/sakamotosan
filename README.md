@@ -14,6 +14,10 @@ Slack bot powered by node.js and Botkit.
 ```
 cp .env.sample .env
 # edit .env
+
+cp config/RandomText.sample.js config/RandomText.js
+# edit config/RandomText.js
+
 yarn install
 yarn run start
 ```
