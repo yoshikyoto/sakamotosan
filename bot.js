@@ -17,7 +17,6 @@ controller.hears(
   ['タスク'],
   'ambient',
   function(bot, message) {
-    console.log(message.channel);
     let trello = new TrelloClient(process.env.TRELLO_KEY, process.env.TRELLO_TOKEN);
     // 指定した名前のリストのIDを取得し、
     // そのIDからリストに含まれるチケットを全て取得する
@@ -41,29 +40,9 @@ controller.hears(
   }
 );
 
-
-let timerComment = function() {
-  let trello = new TrelloClient(process.env.TRELLO_KEY, process.env.TRELLO_TOKEN);
-
-  // 指定した名前のリストのIDを取得し、
-  // そのIDからリストに含まれるチケットを全て取得する
-  trello.getList(
-    process.env.TRELLO_BOARD_ID,
-    process.env.TRELLO_LIST_NAME
-  ).then((list) => {
-    trello.getActiveCardsOnList(
-      process.env.TRELLO_BOARD_ID,
-      list.id
-    ).then((cards) => {
-      let cardNames = cards.map(card => card.name);
-      let text = cardNames.map(name => '- ' + name).join("\n");
-      bot.say({
-        text: text,
-        channel: process.env.SLACK_CHANNEL_ID,
-      });
-    });
-  });
-}
-
-setInterval(timerComment, 30 * 60 * 1000)
-timerComment();
+let workingHandler = require('./handler/Working.js');
+controller.hears(
+  ['出勤'],
+  'ambient',
+  workingHandler
+);
