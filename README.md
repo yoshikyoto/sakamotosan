@@ -34,6 +34,12 @@ sudo cp ./systemd/sakamotosan.service /etc/systemd/system/sakamotosan.service
 # and change `ExecStart` command into absolute path to sakamotosan's yarn
 ```
 
+* start
+
+```
+sudo systemctl start sakamotosan
+```
+
 
 ## Example for Upstart
 
